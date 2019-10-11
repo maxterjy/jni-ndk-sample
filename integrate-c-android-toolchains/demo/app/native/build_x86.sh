@@ -1,11 +1,11 @@
 
-#build static library: libUtil
+#set tool paths
 CC=/home/invi/env/android/ndk/android-ndk-r11c/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-gcc
 AR=/home/invi/env/android/ndk/android-ndk-r11c/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-ar
 SYSROOT=/home/invi/env/android/ndk/android-ndk-r11c/platforms/android-24/arch-x86
 INCS=-I/home/invi/env/android/ndk/android-ndk-r11c/platforms/android-24/arch-x86/usr/include/android
 
-#create libLegacy
+#build libLegacy
 cd ./legacy
 $CC -c util.c -o util.o --sysroot=$SYSROOT $INCS -llog
 $AR rcs libLegacy.a util.o 

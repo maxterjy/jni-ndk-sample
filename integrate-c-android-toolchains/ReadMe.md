@@ -1,3 +1,5 @@
+0. Open file ./demo/native/build_x86.sh to set your tool paths
+
 1. Build
 '''console
 $ ./build.sh
