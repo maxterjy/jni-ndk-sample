@@ -6,6 +6,6 @@ cd ./app/native
 ./build_x86.sh
 
 echo build apk
-echo $root
+cd $root
 ./gradlew assemble
 ./gradlew installDebug
