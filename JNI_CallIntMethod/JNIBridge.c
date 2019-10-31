@@ -23,7 +23,7 @@ JNIEXPORT void JNICALL Java_Demo_nativeEntry(JNIEnv *env, jobject thiz) {
     jmethodID addMethod = (*env)->GetMethodID(env, adderCls, "add", "(II)I"); 
     // (II)I: is signature of method Adder.add()
     // use command: 
-    //java -s -p Adder
+    //javap -s -p Adder
     //to get method signature
 
     //call method add of object mAdder
